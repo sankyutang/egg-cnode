@@ -4,11 +4,11 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = 'CNode技术社区';
+  config.name = '旅神文化';
 
-  config.description = 'CNode：Node.js专业中文社区';
+  config.description = '旅神文化国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。';
 
-  config.site_logo = '/public/images/cnodejs_light.svg';
+  config.site_logo = '/public/images/lvshen-logo.svg';
 
   config.site_icon = '/public/images/cnode_icon_32.png';
 
@@ -18,7 +18,7 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1519887194138_3450';
 
-  config.host = 'http://cnodejs.org';
+  config.host = 'http://xiaolvshen.cn';
 
   config.session_secret = 'node_club_secret'; // 务必修改
 
@@ -39,14 +39,15 @@ module.exports = appInfo => {
   config.mini_assets = process.env.EGG_MINI_ASSETS || false;
 
   // 版块
-  config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
+  // config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
+  config.tabs = [];
 
   // RSS配置
   config.rss = {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
+    title: '旅神文化国学中文社区',
+    link: 'http://www.xiaolvshen.cn',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: '旅神文化国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。',
     // 最多获取的RSS Item数量
     max_rss_items: 50,
   };
