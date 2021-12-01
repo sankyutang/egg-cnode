@@ -6,7 +6,7 @@ services:
     #   dockerfile: Dockerfile
     #   args:
     #     - env=value
-    image: cnode/egg-cnode:latest
+    image: sankyutang/egg-cnode:latest
     environment:
       - NODE_ENV=production
       - EGG_SERVER_ENV=prod
