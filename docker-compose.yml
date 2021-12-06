@@ -40,7 +40,7 @@ services:
     depends_on:
       - cnode
     networks:
-      - app-network
+      - docker_cnode
   redis:
     image: redis:3.2-alpine
     command: redis-server --appendonly yes --requirepass egg_cnode
