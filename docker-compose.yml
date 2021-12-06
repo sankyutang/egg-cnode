@@ -35,8 +35,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - web-root: ./usr/src/html
-      - ./nginx-conf: /etc/nginx/conf.d
+      - web-root:./usr/src/html
+      - ./nginx-conf:/etc/nginx/conf.d
     depends_on:
       - cnode
     networks:
