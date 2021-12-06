@@ -28,7 +28,19 @@ services:
       - docker_cnode
     ports:
       - 7001:7001
-
+  nginx:
+    image: nginx:stable
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - web-root: ./usr/src/html
+      - ./nginx-conf: /etc/nginx/conf.d
+    depends_on:
+      - cnode
+    networks:
+      - app-network
   redis:
     image: redis:3.2-alpine
     command: redis-server --appendonly yes --requirepass egg_cnode

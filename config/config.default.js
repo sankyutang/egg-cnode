@@ -20,7 +20,7 @@ module.exports = appInfo => {
 
   config.host = 'http://xiaolvshen.cn';
 
-  config.session_secret = 'node_club_secret'; // 务必修改
+  config.session_secret = 'lvshen_secret'; // 务必修改
 
   // add your config here
   config.middleware = [ 'locals', 'authUser', 'blockUser', 'errorPage', 'errorHandler' ];
