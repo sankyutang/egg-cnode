@@ -37,7 +37,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/conf.d:/usr/src/nginx/conf.d
       # - ./nginx/cert:/etc/nginx/cret
       # - ./logs/nginx:/var/log/nginx
     depends_on:
