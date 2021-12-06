@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # 拷贝 nginx 全局配置文件
-COPY nginx.conf /etc/nginx/
+COPY nginx.conf /usr/src/nginx/
 
 # apk 国内源
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories
