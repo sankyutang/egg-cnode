@@ -33,9 +33,10 @@ services:
     build:              # 定义需要构建的内容
       context: ./nginx  # 选取 nginx 文件夹
     container_name: webserver
-    restart: unless-stopped
+    restart: always
     ports:
-      - "80:80"
+      - 80:80
+      - 443:443
     volumes:
       - ./nginx/conf.d:/usr/src/nginx/conf.d
       # - ./nginx/cert:/etc/nginx/cret
