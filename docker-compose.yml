@@ -38,7 +38,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./nginx/conf.d:/usr/src/nginx/conf.d
+      - ./nginx/conf.d:/etc/nginx/conf.d
       # - ./nginx/nginx.conf:/usr/src/nginx/nginx.conf
       # - ./nginx/cert:/etc/nginx/cret
       # - ./logs/nginx:/var/log/nginx
