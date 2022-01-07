@@ -40,7 +40,14 @@ module.exports = appInfo => {
 
   // 版块
   // config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
-  config.tabs = [];
+  config.tabs = [
+    ['daily', '每日通勝'],
+    ['luck', '吉祥物語'],
+    ['culture', '國學文化'],
+    ['mall', '產品專區'],
+    ['activity', '活動'],
+    ['kaidan', '怪談系列']   
+  ];
 
   // RSS配置
   config.rss = {
