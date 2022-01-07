@@ -15,6 +15,17 @@ db.createUser({
   ]
 })
 
+db.createUser({
+  user: 'admin',
+  pwd: 'xiaolvshen',
+  roles: [
+    {
+      role: 'userAdminAnyDatabase',
+      db: 'egg_cnode'
+    }
+  ]
+})
+
 db.egg_cnode.insert({
   egg_cnode: 'egg-cnode'
 })
