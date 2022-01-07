@@ -8,7 +8,7 @@ module.exports = appInfo => {
 
   config.description = '广州旅神文化传媒有限公司目前运营着国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。';
 
-  config.site_logo = '/public/images/lvshen-logo.png';
+  config.site_logo = 'http://static.xiaolvshen.cn/xiaolvshen/lvshen-logo.png';
 
   config.site_icon = '/public/images/cnode_icon_32.png';
 
