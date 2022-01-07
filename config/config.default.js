@@ -6,7 +6,7 @@ module.exports = appInfo => {
 
   config.name = '旅神文化';
 
-  config.description = '旅神文化国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。';
+  config.description = '广州旅神文化传媒有限公司目前运营着国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。';
 
   config.site_logo = '/public/images/lvshen-logo.png';
 
@@ -47,7 +47,7 @@ module.exports = appInfo => {
     title: '旅神文化国学中文社区',
     link: 'http://www.xiaolvshen.cn',
     language: 'zh-cn',
-    description: '旅神文化国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。',
+    description: '广州旅神文化传媒有限公司目前运营着国学门户网站，是专业的易经国学网站，主要研究和宣传中国易经文化，其目的在于弘扬国学文化，崇尚易经智慧，给予人生启示，为广大易学爱好者提供学述交流平台。',
     // 最多获取的RSS Item数量
     max_rss_items: 50,
   };
@@ -140,8 +140,8 @@ module.exports = appInfo => {
     host: 'smtp.126.com',
     port: 25,
     auth: {
-      user: 'club@126.com',
-      pass: 'club',
+      user: 'xiaolvshen@126.com',
+      pass: 'xiaolvshen520',
     },
     ignoreTLS: true,
   };
